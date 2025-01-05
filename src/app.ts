@@ -10,3 +10,7 @@ export const app = useContextKey('app', () => {
   console.error('app not found');
   return null as unknown as QueryRouterServer;
 });
+
+export const isDev = !!DEV_SERVER;
+
+export const rootEl = document.getElementById('ai-root') as HTMLElement;

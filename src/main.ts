@@ -1,4 +1,5 @@
 import { page, app } from './app.ts';
+import './demos/routes.ts';
 export const render = ({ renderRoot }) => {
   renderRoot.innerHTML = `
     <h1>Hello, World!</h1>
@@ -6,7 +7,7 @@ export const render = ({ renderRoot }) => {
 };
 
 if (page) {
-  page.addPage('/app-template', 'home');
+  page.addPage('/', 'home');
   page.subscribe('home', () => {
     render({
       renderRoot: document.getElementById('ai-root'),

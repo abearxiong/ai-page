@@ -16,6 +16,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "@floating-ui/dom": "^1.6.12",
     "@kevisual/query": "0.0.7-alpha.3",
     "@kevisual/system-ui": "^0.0.3",
     "dayjs": "^1.11.13",
